@@ -30,20 +30,6 @@ body{
  background-color: var(--corback);
 }
 
-header{
-    background-color:var(--corback);
-    color: var(--cortext);
-}
-nav > ul{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 15px;
-}
-nav > ul > li{
-    list-style-type: none;
-
-}
 
 main{
    display: block;
