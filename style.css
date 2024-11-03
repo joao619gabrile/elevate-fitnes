@@ -1,4 +1,13 @@
 @charset "UTF-8";
+@font-face {
+    font-family:'bebas' ;
+    src: url(fonts/bebas_neue/BebasNeue-Regular.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'nexa';
+    src: url(fonts/nexa/Nexa-ExtraLight.ttf) format('truetype');
+}
 
 :root{
 
@@ -6,18 +15,18 @@
     --corback1:#454444;
     --coricon:#F23005;
     --cortext:#fff;
+    --cortext1:#f64923;
     
 }
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'nexa';
 }
 
 body{
- height: 100vh;
- width: 100vw;
+ width: 100%;
  background-color: var(--corback);
 }
 
@@ -37,22 +46,24 @@ nav > ul > li{
 }
 
 main{
-   display: flex; 
-   flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  
+   display: block;
+   padding: 20px;
+   
 }
 
 section#promote{
-    background-color: var(--corback1);
+    background-image: url(imagens/back-transparent.png);
+    background-size: cover;
     padding: 30px;
-    height: 450px;
+    height: 550px;
     width: 450px;
+    margin: auto;
+    margin-bottom: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; 
+    border-radius: 15px;
 
 
 }
@@ -81,6 +92,136 @@ section#promote > a > button{
     cursor: pointer;
     border-radius: 5px;
 }
+
+section#programs{
+    background-color: var(--corback);
+    margin: auto;
+    width: 450px;
+    padding: 20px;
+    margin-bottom: 30px;
+    
+    
+}
+
+section#programs > h1{
+    text-align: center;
+    color: var(--cortext1);
+    margin-bottom: 20px;
+    border-bottom: 3px solid var(--coricon);
+    width: 200px;
+    padding-bottom: 30px;
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+}
+section#programs > p{
+    text-align: left;
+    width: 370px;
+    display: block;
+    margin: auto;
+    color: var(--cortext);
+    margin-bottom: 50px;
+}
+div#box{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+div#box > .card{
+    height: 430px;
+    width: 90%;
+    padding: 25px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    background-color: #454444;
+    border-radius: 10px;
+    color: var(--cortext);
+}
+
+.card > img{
+    height: 60px;
+    width: 60px;
+}
+
+.card > h1{
+    font-size: 1.3em;
+    color: var(--cortext1);
+}
+
+.card > p{
+ font-size: 1em;
+ text-align: center;
+ width: 300px;
+}
+
+.card > a{
+    text-decoration: none;
+    color: var(--cortext1);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card > a::after{
+    margin-left: 5px;
+    content: '\2192';
+}
+
+section#plans{
+    width: 400px;
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    border-radius: 20px;
+}
+
+section#plans > .card_plans{
+    padding: 20px;
+    height: 400px;
+    border-radius: 20px;
+    background-color: #454444;
+    
+}
+
+section#plans > .card_plans > h2{
+    text-align: center;
+    margin-bottom: 20PX;
+    color: #f64923;
+}
+
+section#plans > .card_plans > p{
+    text-align: center;
+    font-size: 2.3em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+section#plans > .card_plans > p::after{
+    content:"/por mês" ;
+    font-size: 16px;
+}
+
+section#plans > .card_plans > ul > li{
+    list-style-type: none;
+    color: white;
+    padding: 10px;
+    width: 260px;
+    margin: auto;
+}
+
+section#plans > .card_plans > ul > li::before{
+    content: "✅"; /* Símbolo de check */
+  
+}
+
+
+
+
 
 
 
