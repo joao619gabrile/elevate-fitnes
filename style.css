@@ -48,6 +48,7 @@ nav > ul > li{
 main{
    display: block;
    padding: 20px;
+   width: 100%;
    
 }
 
