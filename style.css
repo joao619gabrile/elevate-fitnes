@@ -52,11 +52,11 @@ main{
 }
 
 section#promote{
-    background-image: url(imagens/back-transparent.png);
+    background-image: url(imagens/background.jpg);
     background-size: cover;
     padding: 30px;
     height: 550px;
-    width: 450px;
+    width: 400px;
     margin: auto;
     margin-bottom: 40px;
     display: flex;
