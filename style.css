@@ -25,31 +25,48 @@
     font-family: 'nexa';
 }
 
-body{
- width: 100%;
+body, html{
  background-color: var(--corback);
+ max-width: 100vw;
 }
 
+header{
+    background-color:var(--corback);
+    color: var(--cortext);
+}
+nav > ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+}
+nav > ul > li{
+    list-style-type: none;
+
+}
 
 main{
-   display: block;
+   display: flex;
+   flex-direction: column;
    padding: 20px;
-   width: 100%;
    
 }
 
 section#promote{
     background-image: url(imagens/background.jpg);
     background-size: cover;
-    padding: 30px;
+   
     height: 550px;
-    width: 400px;
+    width: 80vw;
     margin: auto;
-    margin-bottom: 40px;
+    margin-bottom: 40px; 
+    padding: 30px;
+
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center; 
+    justify-content: center;
+
     border-radius: 15px;
 
 
@@ -58,7 +75,6 @@ section#promote{
 section#promote > h1{
    color: var(--cortext);
    margin-bottom: 20px;
-   width: 350px;
 
 }
 
@@ -93,8 +109,10 @@ section#programs{
 section#programs > h1{
     text-align: center;
     color: var(--cortext1);
+
     margin-bottom: 20px;
     border-bottom: 3px solid var(--coricon);
+    
     width: 200px;
     padding-bottom: 30px;
     display: block;
@@ -158,9 +176,7 @@ div#box > .card{
 }
 
 section#plans{
-    width: 400px;
-    margin: auto;
-    padding: 30px;
+    width: 450px;
     display: flex;
     flex-direction: column;
     gap: 40px;
