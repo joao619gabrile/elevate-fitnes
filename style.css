@@ -97,7 +97,6 @@ section#promote > a > button{
 }
 
 section#programs{
-    background-color: var(--corback);
     margin: auto;
     width: 450px;
     padding: 20px;
@@ -128,6 +127,7 @@ section#programs > p{
     margin-bottom: 50px;
 }
 div#box{
+    
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -175,51 +175,69 @@ div#box > .card{
     content: '\2192';
 }
 
-section#plans{
+section#plans {
+    
     width: 450px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    border-radius: 20px;
-}
-
-section#plans > .card_plans{
     padding: 20px;
-    height: 400px;
-    border-radius: 20px;
-    background-color: #454444;
+    margin: auto;
     
 }
 
-section#plans > .card_plans > h2{
+div#box-plans{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+div#box-plans > h1{
+    display: block;
+    margin: auto;
+    text-align: center;
+   width:120px;
+   color: var(--cortext1);
+   border-bottom: 3px solid var(--cortext1);
+   padding-bottom: 20px;
+}
+
+.card_plans{
+    padding: 20px;
+    width: 90%;
+    height: 400px;
+    border-radius: 20px;
+    background-color: #454444;
+    margin: auto;
+    
+}
+
+.card_plans > h2{
     text-align: center;
     margin-bottom: 20PX;
     color: #f64923;
 }
 
-section#plans > .card_plans > p{
+.card_plans > p{
     text-align: center;
     font-size: 2.3em;
     margin-bottom: 20px;
     color: white;
 }
 
-section#plans > .card_plans > p::after{
+.card_plans > p::after{
     content:"/por mês" ;
     font-size: 16px;
 }
 
-section#plans > .card_plans > ul > li{
+.card_plans > ul > li{
     list-style-type: none;
     color: white;
     padding: 10px;
-    width: 260px;
+    width: 280px;
     margin: auto;
 }
 
-section#plans > .card_plans > ul > li::before{
+.card_plans > ul > li::before{
     content: "✅"; /* Símbolo de check */
-  
+   margin-right: 7px;
 }
 
 
