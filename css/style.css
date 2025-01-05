@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+}
+
+body{ 
+
+    background-color: #ffffff;
+    
+    min-width: 100%;
+    min-height: 100vh;
+   
+}
+/*Configuraçoes de estilo do menu do header*/
+header{
+
+    background-color: #00101d;
+    padding: 10px;
+    
+}
+nav{
+    background-color: #00101d;
+    padding-right: 10px;
+}
+
+nav > ul {
+    color: white;
+    padding: 20px;
+
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+    
+}
+
+ul > li {
+    list-style-type: none;
+    margin: 10px;
+    cursor: pointer;
+}
+
+li > a {
+    color: white;
+    font-size: 2.3rem;
+    text-decoration: none;
+    
+    
+}
+
+#btn{
+    background-color: orangered;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+/*Fim das configurações de estilo do menu do header*/
+
+
+/*Configurações do home page*/
+.home-page{
+    background-image: url(../imagens/background.jpg);
+    background-size: cover;
+    height: 85vh;
+    padding-left: 200px;
+
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.home-page > h1{
+    color: white;
+    font-size: 5rem;
+    margin-bottom: 15px;
+}
+
+.home-page > p{
+    font-size: 3rem;
+    width: 600px;
+    color: white;
+}
+/*Fim das Configurações do home-page*/
+
+.box{
+    background-color: white;
+    height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.card{
+    background-color:#00101d;
+    color: aliceblue;
+    height: 400px;
+    width: 400px;
+    padding: 20px;
+    font-size: 3rem;
+    text-align: justify;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card > h1{
+    text-align: center;
+}
+.card > p {
+    margin-top: 30px;
+}
+
+.tutors {
+    background-color: #00101d;
+    height: 120vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tutors > h1{
+    color: white;
+    font-size: 4rem;
+    padding-bottom: 5px;
+    border-bottom: 3px solid orangered;
+    margin-bottom:20px ;
+}
+
+.tutors > p{
+    color: white;
+    font-size: 2rem;
+    text-align: justify;
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+.box-t{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas com tamanhos iguais */
+    grid-template-rows: repeat(2, auto); /* Duas linhas ajustadas ao conteúdo */
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    
+}
+
+.card-t{
+    height: 250px;
+    width: 250px;
+    background-color: #ffffff;
+    padding: 20px;
+    
+}
+
+.card-t > p{
+    font-size: 1.5rem;
+}
+
+footer{
+    background-color: #00101d;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    border-top: 1px solid rgb(160, 160, 160);
+}
+
+.lista{
+    background-color: #00101d;
+    padding: 20px;
+    height: 200px;
+    width: 200px;
+}
+.lista > h2{
+    color: #ffffff;
+    font-size: 2rem;
+}
+.lista >  ul > li{
+    font-size: 1.6rem;
+    color: white;
+    
+}
+
+footer > img{
+    height: 100px;
+    width: 200px;
+    margin-top: 50px;
+    
+}
+
