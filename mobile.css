@@ -1,0 +1,18 @@
+body{ 
+  width: 400px;
+    background-color: #ffffff;
+    
+   
+}
+header{
+    display: none;
+}
+
+.home-page{
+
+    background-image: url(imagens/back-transparent.png);
+    background-size: cover;
+    
+
+}
+
